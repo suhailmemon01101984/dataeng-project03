@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-16T04:55:02.879Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="zZG2NRpALotXDePDBle8" version="22.1.2" type="device">
+<mxfile host="app.diagrams.net" modified="2023-11-16T05:01:02.941Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="aKgTxPX7v6Xyn_NwSoPg" version="22.1.2" type="device">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1194" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -40,10 +40,8 @@
         <mxCell id="g-Wtju5NSsTcF-88Mxho-40" value="&lt;b&gt;+userid (PK)&lt;/b&gt;&lt;br&gt;+username&lt;br&gt;+firstname&lt;br&gt;+lastname&lt;br&gt;+city&lt;br&gt;+state&lt;br&gt;+email&lt;br&gt;+phone&lt;br&gt;+likesports&lt;br&gt;+liketheatre&lt;br&gt;+likeconcerts&lt;br&gt;+likejazz&lt;br&gt;+likeclassical&lt;br&gt;+likeopera&lt;br&gt;+likerock&lt;br&gt;+likevegas&lt;br&gt;+likebroadway&lt;br&gt;+likemusicals" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="g-Wtju5NSsTcF-88Mxho-39">
           <mxGeometry y="50" width="200" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="g-Wtju5NSsTcF-88Mxho-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g-Wtju5NSsTcF-88Mxho-41">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="490" y="100" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="g-Wtju5NSsTcF-88Mxho-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g-Wtju5NSsTcF-88Mxho-41" target="g-Wtju5NSsTcF-88Mxho-32">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="g-Wtju5NSsTcF-88Mxho-41" value="&lt;b&gt;venue&lt;/b&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="610" y="30" width="180" height="140" as="geometry" />
