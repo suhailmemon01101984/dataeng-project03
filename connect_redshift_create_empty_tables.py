@@ -9,7 +9,7 @@ conn = redshift_connector.connect(
      database='dev',
      port=5439,
      user='suhailmemon84-admin',
-     password='May200726'
+     password='mypwd'
   )
 
 cursor = conn.cursor()
