@@ -6,7 +6,7 @@
 
 import redshift_connector
 conn = redshift_connector.connect(
-     host='default-workgroup.236765750193.us-east-1.redshift-serverless.amazonaws.com',
+     host='default-workgroup.236765750193.us-west-2.redshift-serverless.amazonaws.com',
      database='dev',
      port=5439,
      user='suhailmemon84-admin',
@@ -16,28 +16,28 @@ conn.autocommit = True
 cursor = conn.cursor()
 
 cursor.execute("truncate table dev.public.event")
-cursor.execute("copy dev.public.event from 's3://tickit-data-bucket/allevents_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' delimiter '|';")
+cursor.execute("copy dev.public.event from 's3://tickit-data-bucket/allevents_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' REGION 'us-east-1' delimiter '|';")
 
 
 cursor.execute("truncate table dev.public.users")
-cursor.execute("copy dev.public.users from 's3://tickit-data-bucket/allusers_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' delimiter '|';")
+cursor.execute("copy dev.public.users from 's3://tickit-data-bucket/allusers_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' REGION 'us-east-1' delimiter '|';")
 
 
 cursor.execute("truncate table dev.public.category")
-cursor.execute("copy dev.public.category from 's3://tickit-data-bucket/category_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' delimiter '|';")
+cursor.execute("copy dev.public.category from 's3://tickit-data-bucket/category_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' REGION 'us-east-1' delimiter '|';")
 
 
 cursor.execute("truncate table dev.public.date")
-cursor.execute("copy dev.public.date from 's3://tickit-data-bucket/date2008_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' delimiter '|';")
+cursor.execute("copy dev.public.date from 's3://tickit-data-bucket/date2008_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' REGION 'us-east-1' delimiter '|';")
 
 cursor.execute("truncate table dev.public.listing")
-cursor.execute("copy dev.public.listing from 's3://tickit-data-bucket/listings_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' delimiter '|';")
+cursor.execute("copy dev.public.listing from 's3://tickit-data-bucket/listings_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' REGION 'us-east-1' delimiter '|';")
 
 cursor.execute("truncate table dev.public.sales")
-cursor.execute("copy dev.public.sales from 's3://tickit-data-bucket/sales_tab.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' timeformat 'MM/DD/YYYY HH:MI:SS' delimiter '\t';")
+cursor.execute("copy dev.public.sales from 's3://tickit-data-bucket/sales_tab.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' REGION 'us-east-1' timeformat 'MM/DD/YYYY HH:MI:SS' delimiter '\t';")
 
 cursor.execute("truncate table dev.public.venue")
-cursor.execute("copy dev.public.venue from 's3://tickit-data-bucket/venue_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' delimiter '|';")
+cursor.execute("copy dev.public.venue from 's3://tickit-data-bucket/venue_pipe.txt' iam_role 'arn:aws:iam::236765750193:role/suhailmemon84-reshift-s3-readonly-access' REGION 'us-east-1' delimiter '|';")
 
 
 cursor.close()
